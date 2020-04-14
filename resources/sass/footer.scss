@@ -1,0 +1,22 @@
+//Footer Styles
+footer{
+    text-align: justify;
+    padding:2rem 15px;
+    margin-top: 2rem;
+    margin-right: -15px;
+    margin-left: -15px;
+    background: #f9f9f9;
+
+    div{
+        margin-bottom: 1.5rem;
+
+        li{
+            list-style: none;
+
+            a{
+                color: inherit;
+            }
+        }
+    }
+    
+}

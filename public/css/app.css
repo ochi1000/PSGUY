@@ -11356,3 +11356,171 @@ a.text-dark:focus {
   }
 }
 
+@font-face {
+  font-family: "fifa-font";
+  src: url(/fonts/EASansCurves-Regular.ttf?001f58f905f2a1dfe5ba745403421b72);
+}
+
+.home-carousel {
+  max-height: 60vw;
+  position: absolute;
+}
+
+.after-image {
+  min-height: 500px;
+  position: absolute;
+  padding-top: 80px;
+  z-index: 30;
+  -webkit-clip-path: polygon(50% 3%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+          clip-path: polygon(50% 3%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+}
+
+.after-image h1 {
+  font-weight: bold;
+}
+
+.after-image .btn {
+  padding: 0.2rem 0.4rem;
+  color: #fff;
+  background-color: #cd3d0f;
+  border: none;
+  border-radius: unset;
+}
+
+.text-highlight {
+  background-color: #eaeaea;
+  border-radius: 0.6rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.text-highlight a {
+  color: #212529;
+}
+
+.testimony {
+  margin-right: 15px;
+  margin-left: 15px;
+  box-shadow: #f6f6f6 1px 11px 19px 1px;
+  margin-top: 45px;
+  padding: 1rem 1rem 0.1rem 1rem;
+}
+
+.testimony p {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.tournament-div {
+  background: url(/game-images/tournament6.jpg);
+  background-size: cover;
+  display: block;
+  min-height: 50vw;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 2rem;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.tournament-div .fifa-logo-div img {
+  width: 100px;
+  margin-top: 10px;
+}
+
+.tournament-div div {
+  margin-top: 20px;
+}
+
+.tournament-div div .whatsapp-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.tournament-div div p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: white;
+  font-family: fifa-font;
+  margin-bottom: 0.5rem;
+}
+
+.tournament-div div .fab {
+  font-size: medium;
+  color: lawngreen;
+}
+
+@media (max-width: 576px) {
+  .carousel-item > img {
+    height: 60vw;
+  }
+
+  .pad-div {
+    position: absolute;
+    z-index: 50;
+  }
+
+  .pad-div .pad-img-div {
+    text-align: center;
+  }
+
+  .pad-div .pad-img-div img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 425px) {
+  .after-image {
+    margin-top: 215px;
+  }
+
+  .pad-div {
+    margin-top: 205px;
+  }
+}
+
+@media (max-width: 375px) {
+  .after-image {
+    margin-top: 195px;
+  }
+
+  .pad-div {
+    margin-top: 175px;
+  }
+}
+
+@media (max-width: 320px) {
+  .after-image {
+    margin-top: 165px;
+  }
+
+  .pad-div {
+    margin-top: 150px;
+  }
+}
+
+.no-display {
+  display: none;
+}
+
+footer {
+  text-align: justify;
+  padding: 2rem 15px;
+  margin-top: 2rem;
+  margin-right: -15px;
+  margin-left: -15px;
+  background: #f9f9f9;
+}
+
+footer div {
+  margin-bottom: 1.5rem;
+}
+
+footer div li {
+  list-style: none;
+}
+
+footer div li a {
+  color: inherit;
+}
+
