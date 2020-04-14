@@ -11356,6 +11356,10 @@ a.text-dark:focus {
   }
 }
 
+body {
+  font-size: 1rem;
+}
+
 @font-face {
   font-family: "fifa-font";
   src: url(/fonts/EASansCurves-Regular.ttf?001f58f905f2a1dfe5ba745403421b72);
