@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ secure_asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!-- Fonts -->
@@ -18,8 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('font/css/all.css') }}" rel="stylesheet"> <!--load all styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('font/css/all.css') }}" rel="stylesheet"> <!--load all styles -->
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
@@ -30,7 +30,7 @@
             <a class="navbar-brand mx-auto" href="{{ url('/') }}">
                 PSGUY
             </a>
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <a class="show-for-small-screen" href="{{ url('/') }}">
                 shop
             </a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,8 +41,15 @@
 
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('login') }}">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('login') }}">About Us</a>
+                    </li>
                     <!-- Authentication Links -->
-                    @guest
+
+                    {{-- @guest
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
@@ -69,7 +76,10 @@
                                 </form>
                             </div>
                         </li>
-                    @endguest
+                    @endguest --}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Shop</a>
+                    </li>
                 </ul>
             </div>
         </div>

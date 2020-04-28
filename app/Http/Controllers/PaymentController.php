@@ -6,9 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Mail\TestingMail;
 use Paystack;
-use App\Models\User;
+use App\User;
 
 // use Unicodeveloper\Paystack\Paystack;
 
@@ -32,7 +31,7 @@ class PaymentController extends Controller
     {
         $paymentDetails = Paystack::getPaymentData();
 
-        print($paymentDetails);
+        return view('checkout',['paymentDetails'=>$paymentDetails]);
         // return redirect('/');
         // Mail::to($user)->send(new TestingMail);
         // Now you have the payment details,

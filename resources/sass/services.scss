@@ -1,4 +1,58 @@
-.no-display{
-    display: none;
+.fixing{
+    margin-top: 1rem;
+        .btn{
+            padding: 0.2rem 0.4rem;
+            color: #fff;
+            border: none;
+            border-radius: unset;
+        }
+
+        .fix{
+            .form-group{
+                margin-bottom:1.2rem;
+            }
+        }
 }
 
+.insure{
+    margin-top: 2rem;
+
+    p{
+        margin-bottom: .1rem;
+    }
+    li{
+        list-style: none;
+
+        a{
+            color: black;
+        }
+    }
+}
+.review{
+    border: 0.51px solid #d3cfcf;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+
+    .review-desc{
+        width: 100%;
+    }
+    P{
+        margin-bottom: 0.1rem;
+    }
+}
+
+@media screen and(min-width:577px){
+    .fixing{
+        width: 55vw;
+        margin-top: 3rem;
+        box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.175);
+        padding: 2rem;
+        background-color: white;
+    }
+
+    .temp{
+        background-color: #f8f9fa;
+    }
+}

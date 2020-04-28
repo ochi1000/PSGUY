@@ -18,5 +18,21 @@ footer{
             }
         }
     }
-    
+
+}
+
+@media screen and(min-width:577px){
+
+    footer{
+        margin-top: 4rem;
+        padding: 3rem 5rem;
+
+        h5{
+            font-size: 2rem;
+        }
+
+        div li{
+            margin-bottom: 0.8rem;
+        }
+    }
 }

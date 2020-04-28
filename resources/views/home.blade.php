@@ -20,30 +20,56 @@
       </div>
 </section>
 <div class="d-block w-100 pad-div">
-    <div class="pad-img-div">
+    <div class="pad-img-div show-for-small-screen">
         <img class="" src="/game-images/ps4pad.png">
     </div>
 </div>
 <section class="container bg-white mw-100 after-image text-center">
     <div class="mt-4">
-        <h3>Fix your PS4 pads for almost nothing</h3>
-        <div>
-            <img style="width:100px;" src="/game-images/ps4pad3.png">
+        <div class="show-for-small-screen">
+            <h3>Fix your PS4 pads for almost nothing</h3>
+            <div>
+                <img style="width:100px;" src="/game-images/ps4pad3.png">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat est velit egestas dui id ornare arcu odio.<span class="text-highlight"><a href="http://">condimentum lacinia quis vel.</a></span>
+            </p>
+            <a href="/fixing" class="btn">Fix Pad Now</a>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat est velit egestas dui id ornare arcu odio.<span class="text-highlight"><a href="http://">condimentum lacinia quis vel.</a></span>
-        </p>
-        <a href="http://" class="btn">Fix Pad Now</a>
+        <div class="show-for-big-screen row">
+            <div class="col-6">
+                <img src="/game-images/ps4pad3.png">
+            </div>
+            <div class="col-6 write-up">
+                <h3>Fix your PS4 pads for almost nothing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat est velit egestas dui id ornare arcu odio.<span class="text-highlight"><a href="http://">condimentum lacinia quis vel.</a></span>
+                </p>
+                <a href="/fixing" class="btn">Fix Pad Now</a>
+            </div>
+        </div>
     </div>
-    <hr>
+    <hr class="show-for-small-screen">
     <div class="mt-4">
-        <h3>Fix your PS4 consoles</h3>
-        <div>
-            <img style="width:150px;" src="/game-images/ps4console3edit.png">
+        <div class="show-for-small-screen">
+            <h3>Fix your PS4 consoles</h3>
+            <div>
+                <img style="width:150px;" src="/game-images/ps4console3edit.png">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat est velit egestas dui id ornare arcu odio.<span class="text-highlight"><a href="http://">condimentum lacinia quis vel.</a></span>
+            </p>
+            <a href="/fixing" class="btn">Fix Console Now</a>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat est velit egestas dui id ornare arcu odio.<span class="text-highlight"><a href="http://">condimentum lacinia quis vel.</a></span>
-        </p>
-        <a href="http://" class="btn">Fix Console Now</a>
 
+        <div class="show-for-big-screen row">
+            <div class="col-6 write-up">
+                <h3>Fix your PS4 consoles</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat est velit egestas dui id ornare arcu odio.<span class="text-highlight"><a href="http://">condimentum lacinia quis vel.</a></span>
+                </p>
+                <a href="/fixing" class="btn">Fix Console Now</a>
+            </div>
+            <div class="col-6">
+                <img src="/game-images/ps4consoleedit.png">
+            </div>
+        </div>
     </div>
 
     <div class="testimony">
@@ -56,10 +82,10 @@
             <img src="/game-images/fifa-logo1.png" alt="ps4 fifa20 tournament">
         </div>
         <div>
-            <p>e-Tournament starts 27th</p>
-            <p>our customers get early access for registration</p>
+            <p class="tournament-date">e-Tournament starts 27th</p>
+            <p class="our-customers">our customers get early access for registration</p>
             <p class="whatsapp-text">Join our exclusive chat room for your comments and opinion on the tournaments <br><a href="/"><i class="fab fa-whatsapp"></i></a></p>
-            <p>20k to be won</p>
+            <p class="our-customers">20k to be won</p>
         </div>
     </div>
     @include('includes.footer')
