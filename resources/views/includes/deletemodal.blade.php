@@ -10,16 +10,15 @@
                 </button>
                 </div>
                 <div class="modal-body">
-
-                    <div class="form-group">
-                    <input type="text" name="rowId" id="rowId">
-                    </div>
-                    <div class="form-group">
-                    <p>Are you sure, you want to make this <span class="text-damger">MOVE</span>?</p>
-                    </div>
+                    <input type="hidden" name="rowId" id="rowId">
+                    <p class="name"></p>
+                    <p class="description"></p>
+                    <p class="additionalDescription"></p>
+                    <p class="marker"></p>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-success deleteButton">Delete</button>
+                    <p>Are you sure, you want to make this <span class="text-damger">MOVE</span>?</p>
+                    <button class="btn btn-danger deleteButton">Delete</button>
                 </div>
             </form>
           </div>

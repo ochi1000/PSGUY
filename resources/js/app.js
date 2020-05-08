@@ -15,3 +15,5 @@ require('./bootstrap');
 require('./components/App');
 
 require('./components/Services');
+
+require('./components/Checkout');

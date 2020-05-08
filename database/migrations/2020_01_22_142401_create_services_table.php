@@ -14,11 +14,19 @@ class CreateServicesTable extends Migration
     public function up()
     {
         Schema::create('services', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('description');
+            $table->increments('id');
+            $table->integer('user_id');
+            $table->string('user_name')->nullable();
+            $table->string('user_phone')->nullable();
+            $table->string('user_email')->nullable();
+            $table->string('state')->nullable();
+            $table->string('address')->nullable();
+            $table->integer('total');
+            $table->string('payment_gateway')->default('paystack');
+            $table->boolean('received')->default(false);
+            $table->boolean('delivered')->default(false);
+            $table->string('error')->nullable();
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

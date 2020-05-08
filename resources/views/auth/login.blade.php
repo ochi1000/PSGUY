@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8 mt-5">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
 
@@ -58,15 +58,22 @@
                                 </button>
 
                                 @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    <a class="btn btn-link text-dark" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
                             </div>
                         </div>
+                        <hr>
+                        <div class="form-group row mb-0">
+                            <div class="col-md-8 offset-md-4 text-center">
+                                <a href="{{ url('/auth/redirect/google') }}" class="btn btn-outline-primary"><i class="fab fa-google"></i> Login / Sign up with Google</a>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
+            <div class="text-center "><a class="text-dark" href="/register">Register</a></div>
         </div>
     </div>
 </div>

@@ -11,20 +11,21 @@
                 </div>
                 <div class="modal-body">
 
+                    <input type="hidden" name="rowId" id="rowId">
+                    <p class="name"></p>
+                    <p class="description"></p>
                     <div class="form-group">
-                    <input type="text" name="rowId" id="rowId">
+                        <label for='ps4 fault description'>Additional Description (Optional)</label><br>
+                        <textarea class="additionalDescription form-control" rows='4' name="additionalDescription" placeholder="If your problem wasn't in the list above, you can write it here. Or additional problems to what you already selected."></textarea>
                     </div>
+
                     <div class="form-group">
-                    <label for="message-text" class="col-form-label">Description</label>
-                    <textarea name="description" class="form-control edit-description" ></textarea>
-                    </div>
-                    <div class="form-group">
-                    <label for="message-text" class="col-form-label">Mark</label>
-                    <textarea name="mark" class="form-control edit-marker" ></textarea>
+                        <label for='ps4 pad mark'>Mark (Optional)</label>
+                        <textarea class="marker form-control" name="mark" rows='4' required placeholder="If you are fixing more than one pad or console, please identify each with a mark and tell me here."></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-success updateButton">Edit Request</button>
+                    <button class="btn btn-primary updateButton">Save</button>
                 </div>
             </form>
           </div>

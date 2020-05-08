@@ -1,5 +1,8 @@
 @extends('layouts.app')
-
+@include('meta::manager', [
+    'title'         => "Fixing PS4 pads and consoles - PSGUY",
+    'description'   => 'We are honored to help gamers save money on controllers',
+])
 @section('content')
 <div class="temp">
     <section>
@@ -11,7 +14,9 @@
     </section>
     <div class="container fixing">
         <h4 class="text-center">Fixing</h4>
-        <form action="/fixing/create" method="post" enctype="multipart/form-data">
+        <p class="text-success text-center" id="success">G, It's done successfully</p>
+        <p class="text-danger text-center" id="warning">G, we need the complete info</p>
+        <form action="" method="post" enctype="multipart/form-data">
             @csrf
             <section class="fixDiv" style='margin-top:1rem;'>
                 <div class="fix">
@@ -41,12 +46,12 @@
 
                     <div class="form-group">
                         <label for='ps4 fault description'>Additional Description (Optional)</label><br>
-                        <textarea class="additionalDescription form-control" rows='4' name="additionalDescription" placeholder="If your problem wasn't in the list above, you can write it here. Or additional problems to what you already selected."  oninvalid="this.setCustomValidity('This is the main part of this form, and you de leave am empty')"oninput="this.setCustomValidity('')"></textarea>
+                        <textarea class="additionalDescription form-control" rows='4' name="additionalDescription" placeholder="If your problem wasn't in the list above, you can write it here. Or additional problems to what you already selected."></textarea>
                     </div>
 
                     <div class="form-group">
                         <label for='ps4 pad mark'>Mark (Optional)</label>
-                        <textarea class="marker form-control" name="mark" rows='4' required placeholder="If you are fixing more than one pad or console, please identify each with a mark and tell me here." oninvalid="this.setCustomValidity('This is the main part of this form, and you de leave am empty')" oninput="this.setCustomValidity('')"></textarea>
+                        <textarea class="marker form-control" name="mark" rows='4' required placeholder="If you are fixing more than one pad or console, please identify each with a mark and tell me here."></textarea>
                     </div>
                     <p class="text-center"><button class="btn btn-primary fixButton">Save Request</button></p>
                 </div>
@@ -57,20 +62,19 @@
                         <div class="review-desc">
                             <p>{{$cartItem->name}}</p>
                             <p>{{Str::limit($cartItem->options['description'], 30,'...')}}</p>
-                            {{-- <p>
-                                <span>{{Str::limit($cartItem->options['additional_description'], 12, '...')}}</span>,
-                                <span>{{Str::limit($cartItem->options['mark'], 12,'...')}}</span>
-                            </p> --}}
                         </div>
                         <div>
-                            <a class="editFix" href="#" data-toggle="modal" id="{{$cartItem->rowId}}">edit</a>
-                            <a class="deleteFix text-danger" href="#" id="{{$cartItem->rowId}}" data-toggle="modal">delete</a>
+                            <div>
+                                <a class="deleteFix text-danger" data-toggle="modal"><i class="fa fa-times" id="{{$cartItem->rowId}}" aria-hidden="true" aria-label="delete"></i></a>
+                            </div>
                         </div>
                     </div>
                 @endforeach
                 <p class="text-center">
                     <a href="/checkout" class="btn btn-success">Proceed to checkout (₦{{$servicePrice/100}})</a><br>
-                    <a href="/" class="" >see pricing</a>
+                    <button type="button" class="btn btn-link text-primary" data-toggle="modal" data-target="#pricingModal">
+                        see pricing
+                    </button>
                 </p>
             </section>
 

@@ -1,5 +1,8 @@
 @extends('layouts.app')
-
+@include('meta::manager', [
+    'title'         => "PSGUY - Fix Ps4 Controllers and join FIFA Torunaments",
+    'description'   => 'Gamers fix their controllers and join our FIFA Torunaments free',
+])
 @section('content')
 <section class="home-carousel">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -31,7 +34,9 @@
             <div>
                 <img style="width:100px;" src="/game-images/ps4pad3.png">
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat est velit egestas dui id ornare arcu odio.<span class="text-highlight"><a href="http://">condimentum lacinia quis vel.</a></span>
+            <p>You know new pads are cool😎 and not always cheap, but how long does it take before there is something up with the pad. Fixing your pad gives you the opportunity to save more and still get the quality and full functions of a new pad.
+                <span class="text-highlight"><a class="ps4PadFix" href="#" data-toggle="modal">The full gist</a>
+                </span>
             </p>
             <a href="/fixing" class="btn">Fix Pad Now</a>
         </div>
@@ -41,7 +46,8 @@
             </div>
             <div class="col-6 write-up">
                 <h3>Fix your PS4 pads for almost nothing</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat est velit egestas dui id ornare arcu odio.<span class="text-highlight"><a href="http://">condimentum lacinia quis vel.</a></span>
+                <p>You know new pads are cool and not always cheap, but how long does it take before there is something up with the pad. Fixing your pad gives you the opportunity to save more and still get the quality and full functions of a new pad.<span class="text-highlight"><a class="ps4PadFix" href="#" data-toggle="modal">The full gist</a>
+                </span>
                 </p>
                 <a href="/fixing" class="btn">Fix Pad Now</a>
             </div>
@@ -54,7 +60,8 @@
             <div>
                 <img style="width:150px;" src="/game-images/ps4console3edit.png">
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat est velit egestas dui id ornare arcu odio.<span class="text-highlight"><a href="http://">condimentum lacinia quis vel.</a></span>
+            <p>There comes a time in your journey with your console that it begins to act up ( like most people in relationships....😪). Maybe it sounds like a jet engine about to takeoff, but still manages to start the game. It needs a ﬁx before it ﬁnally crashes and costs more to ﬁx.
+                <span class="text-highlight"><a class="ps4ConsoleFix" href="#" data-toggle="modal">Real talk</a>
             </p>
             <a href="/fixing" class="btn">Fix Console Now</a>
         </div>
@@ -62,7 +69,8 @@
         <div class="show-for-big-screen row">
             <div class="col-6 write-up">
                 <h3>Fix your PS4 consoles</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat est velit egestas dui id ornare arcu odio.<span class="text-highlight"><a href="http://">condimentum lacinia quis vel.</a></span>
+                <p>There comes a time in your journey with your console that it begins to act up ( like most people in relationships....😪). Maybe it sounds like a jet engine about to takeoff, but still manages to start the game. It needs a ﬁx before it ﬁnally crashes and costs more to ﬁx.
+                    <span class="text-highlight"><a class="ps4ConsoleFix" href="#" data-toggle="modal">Real talk</a>
                 </p>
                 <a href="/fixing" class="btn">Fix Console Now</a>
             </div>
@@ -82,12 +90,14 @@
             <img src="/game-images/fifa-logo1.png" alt="ps4 fifa20 tournament">
         </div>
         <div>
-            <p class="tournament-date">e-Tournament starts 27th</p>
+            <p class="tournament-date">e-Tournament reg. starts 27th May</p>
             <p class="our-customers">our customers get early access for registration</p>
-            <p class="whatsapp-text">Join our exclusive chat room for your comments and opinion on the tournaments <br><a href="/"><i class="fab fa-whatsapp"></i></a></p>
+            <p class="whatsapp-text">Join our exclusive chat room for your comments and opinion on the tournaments <br><a href="https://chat.whatsapp.com/HMXKfwURwk01MqmydyGnv5"><i class="fab fa-whatsapp"></i></a></p>
             <p class="our-customers">20k to be won</p>
         </div>
     </div>
     @include('includes.footer')
 </section>
+@include('includes.ps4padfixmodal')
+@include('includes.ps4consolefixmodal')
 @endsection

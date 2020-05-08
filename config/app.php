@@ -177,6 +177,12 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // Other service providers…
+        Laravel\Socialite\SocialiteServiceProvider::class,
+
+        //Meta tag Manager
+        Davmixcool\MetaManager\MetaServiceProvider::class,
+
     ],
 
     /*
@@ -229,6 +235,9 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+
+        // Other aliases…
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
     ],
 
 ];
