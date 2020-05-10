@@ -17,7 +17,7 @@ class ServiceController extends Controller
     public function __construct()
     {
         $this->padProblems= [
-            "X or O or SQUARE or TRIANGLE or all are not working","R1 or L1 or L2 or R2 or all are not working","Player keeps going in one direction or Left Analog keeps going in one direction","Left Analog is stiff or hard to use","Right analog problem","Pad is not charging","Pad is charging but not coming on","Pad is not charging and is not coming on ","Pad is coming on but not connecting to the console"
+            "X or O or SQUARE or TRIANGLE or all are not working","R1 or L1 or L2 or R2 or all are not working","Player keeps going in one direction or Left Analog keeps going in one direction","Left Analog problem","Right analog problem","Pad is not charging","Pad is charging but not coming on","Pad is not charging and is not coming on ","Pad is coming on but not connecting to the console"
         ];
         $this->consoleProblems= [
             "Over heating, sounds like a jet engine about to take off","Blue light keeps blinking, does not turn on","Games are lagging, freezing or crashing often","Does not show up or connect to TV, HDMI cable problem","Blinking red light, does not turn on","Blinking yellow light, does not turn on","Ps4 does not eject game discs or auto ejects","PS4 does not connect to PSN"

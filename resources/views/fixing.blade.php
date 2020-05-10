@@ -82,8 +82,8 @@
 
         <div class="insure">
             <p>Not sure about something?
-                 <li><a href="tel:+2349034833670">+234 903 483 3670</a></li>
-                <li><a href="tel:+2347057684942">+234 705 768 4942</a></li>
+                 <li><a href="tel:+2349034833670">+234 903 483 3670</a> (Always available)</li>
+                <li><a href="tel:+2347057684942">+234 705 768 4942</a> (Always available)</li>
             </p>
         </div>
     </div>
