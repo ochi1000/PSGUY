@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @include('meta::manager', [
-    'title'         => "PSGUY - Fix Ps4 Controllers and join FIFA Torunaments",
+    'title'         => "PSGUY - Fix PS4 Controllers and join FIFA Torunaments",
     'description'   => 'Gamers fix their controllers and join our FIFA Torunaments free',
 ])
 @section('content')
@@ -90,9 +90,9 @@
             <img src="/game-images/fifa-logo1.png" alt="ps4 fifa20 tournament">
         </div>
         <div>
-            <p class="tournament-date">e-Tournament reg. starts 27th May</p>
+            <p class="tournament-date">e-Tournament reg. starts 29th May</p>
             <p class="our-customers">our customers get early access for registration</p>
-            <p class="whatsapp-text">Join our exclusive chat room for your comments and opinion on the tournaments <br><a href="https://chat.whatsapp.com/HMXKfwURwk01MqmydyGnv5"><i class="fab fa-whatsapp"></i></a></p>
+            <p class="whatsapp-text">Join our exclusive chat room for more info and your questions on the tournaments <br><a href="https://chat.whatsapp.com/HMXKfwURwk01MqmydyGnv5"><i class="fab fa-whatsapp"></i></a></p>
             <p class="our-customers">20k to be won</p>
         </div>
     </div>

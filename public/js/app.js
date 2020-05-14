@@ -37208,8 +37208,6 @@ $('.save').click(function (e) {
       success: function success(response) {
         console.log(response);
         _success.style.display = 'block';
-
-        _success.fadeOut();
       },
       error: function error(XMLHttpRequest, textStatus, errorThrown) {
         console.log(errorThrown);

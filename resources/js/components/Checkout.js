@@ -27,7 +27,6 @@ $('.save').click(function(e) {
             success: function (response) {
                 console.log(response);
                 success.style.display = 'block';
-                success.fadeOut();
             },
             error: function(XMLHttpRequest, textStatus, errorThrown) {
                 console.log(errorThrown);

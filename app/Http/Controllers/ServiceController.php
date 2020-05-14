@@ -72,7 +72,7 @@ class ServiceController extends Controller
         $user=Auth::user();
 
         $data = $this->validate($request, [
-            'phone'=>'required|digits:11',
+            'phone'=>'required',
             'state'=>'required|string',
             'address'=>'required|string',
         ]);

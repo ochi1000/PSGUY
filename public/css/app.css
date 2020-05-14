@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
-/*!
+/*
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
@@ -11399,12 +11399,13 @@ button:focus {
   position: absolute;
   padding-top: 80px;
   z-index: 30;
-  -webkit-clip-path: polygon(50% 3%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
-          clip-path: polygon(50% 3%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(50% 2%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+          clip-path: polygon(50% 2%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
 }
 
-.after-image h3 {
-  font-weight: bold;
+.after-image hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .after-image .btn {

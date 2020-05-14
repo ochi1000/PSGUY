@@ -14,7 +14,7 @@
     </section>
     <div class="container fixing">
         <h4 class="text-center">Checkout</h4>
-        <p class="text-success text-center" id="success">G, we need the complete info</p>
+        <p class="text-success text-center" id="success">G, It's done successfully</p>
         <p class="text-danger text-center" id="warning">G, we need the complete info</p>
         @if (auth()->user())
         <form method="POST" action="{{ route('pay') }}" accept-charset="UTF-8" class="form-horizontal" role="form">

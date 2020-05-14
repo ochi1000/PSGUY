@@ -9,6 +9,11 @@
             <li><a href="tel:+2347057684942">+234 705 768 4942</a></li>
             <li><a href="mailto:support@psguy.com.ng">support@psguy.com.ng</a></li>
             <li><a href="">5 Okorie close New Haven, Enugu State</a></li>
+            <li>
+                <a href="" style="margin-right: 0.5rem "><i style="color: #68a5fc; font-size:1.2rem" class="fab fa-twitter"></i></a>
+                <a href="" style="margin-right: 0.5rem "><i style="color: #f168fc; font-size:1.2rem" class="fab fa-instagram"></i></a>
+                <a href="" style="margin-right: 0.5rem "><i style="color: #0064f4; font-size:1.2rem" class="fab fa-facebook"></i></a>
+            </li>
         </div>
         <div class="col-lg-6">
             <h5>About</h5>
