@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @include('meta::manager', [
-    'title'         => "PSGUY - Fix PS4 Controllers and join FIFA Torunaments",
-    'description'   => 'Gamers fix their controllers and join our FIFA Torunaments free',
+    'title'         => "PSGUY - Fix PS4 Controllers and join FIFA Tournaments",
+    'description'   => 'Gamers fix their controllers and join our FIFA Tournaments free',
 ])
 @section('content')
 <section class="home-carousel">
@@ -12,9 +12,6 @@
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 img-fluid" src="/game-images/ellie1.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 img-fluid" src="/game-images/godofwar.jpg" alt="Third slide">
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 img-fluid" src="/game-images/ghost.jpeg" alt="Third slide">

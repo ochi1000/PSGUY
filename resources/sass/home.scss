@@ -130,6 +130,10 @@ button:focus{
     }
     .show-for-big-screen{
         display:none;
+
+        img{
+            display: none;
+        }
     }
     .carousel-item>img{
         height: 60vw;

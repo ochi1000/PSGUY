@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
-/*
+/*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
@@ -11485,6 +11485,10 @@ button:focus {
   }
 
   .show-for-big-screen {
+    display: none;
+  }
+
+  .show-for-big-screen img {
     display: none;
   }
 
