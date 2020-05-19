@@ -33,7 +33,7 @@ return [
     'google' => [
         'client_id' => '317224170850-eik2m1vr63p9ph1bts8eoto1suqpfu35.apps.googleusercontent.com',
         'client_secret' => 'PqvkxobsKeiZEEtdmueF10WC',
-        'redirect' => 'http://127.0.0.1:8000/callback/google',
+        'redirect' => 'https://www.psguy.com.ng/callback/google',
       ],
 
 ];
