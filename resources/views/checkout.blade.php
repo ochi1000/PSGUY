@@ -16,11 +16,13 @@
         <h4 class="text-center">Checkout</h4>
         <p class="text-success text-center" id="success">G, It's done successfully</p>
         <p class="text-danger text-center" id="warning">G, we need the complete info</p>
-        @if (auth()->user())
+
+
         <form method="POST" action="{{ route('pay') }}" accept-charset="UTF-8" class="form-horizontal" role="form">
             @csrf
             <section class="fixDiv" style='margin-top:1rem;'>
                 <div class="fix">
+                    @if (auth()->user())
                     <div class="form-group">
                         <label for="name">First Name</label>
                         <input type="text" placeholder="Eg: Chuka, Adesola, Samson " name="name" class="name form-control" value="{{auth()->user()->name}}">
@@ -31,7 +33,7 @@
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" placeholder="Email" value="{{auth()->user()->email}}" name="email" class="form-control">
+                        <input type="email" placeholder="Email" value="{{auth()->user()->email}}" name="email" class="email form-control">
                     </div>
 
                     <div class="form-group">
@@ -48,11 +50,38 @@
                         <label for='ps4 fault description'>Address</label><br>
                         <textarea class="address form-control" rows='2' name="address" placeholder="Address">{{auth()->user()->address}}</textarea>
                     </div>
+                    @else
+                    <div class="form-group">
+                        <label for="name">First Name</label>
+                        <input type="text" placeholder="Eg: Chuka, Adesola, Samson " name="name" class="name form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" placeholder="Whatsapp number for easier and better reach, tournaments too" name="phone" class="form-control phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email" name="email" class="email form-control">
+                    </div>
 
+                    <div class="form-group">
+                        <label for="ps4 ps4 problems">Select State</label>
+                        <select name="state" class="state form-control">
+                            <option selected="true">where you at</option>
+                            @foreach ($states as $state)
+                            <option class="state" value="{{$state}}">{{$state}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for='ps4 fault description'>Address</label><br>
+                        <textarea class="address form-control" rows='2' name="address" placeholder="Address"></textarea>
+                    </div>
+                    @endif
                     <p class="text-center"><button class="btn btn-primary save">Save</button></p>
                 </div>
             </section>
-        {{-- </form> --}}
 
         <hr>
 
@@ -70,6 +99,7 @@
                     </div>
                 </div>
             @endforeach
+            <p class="text-center"><a href="/fixing">add fix</a></p>
             {{-- <form method="POST" action="{{ route('pay') }}" accept-charset="UTF-8" class="form-horizontal" role="form"> --}}
 
                 <div class="" style="margin-bottom:40px;">
@@ -93,7 +123,6 @@
                 </div>
                 </div>
             </form>
-            @endif
             <div class="insure">
                 <p>Not sure about something?
                     <li><a href="tel:+2349034833670">+234 903 483 3670</a> (Always available)</li>

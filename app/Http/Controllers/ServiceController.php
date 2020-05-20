@@ -58,9 +58,6 @@ class ServiceController extends Controller
 
     public function showCompletionForm(){
         if(Cart::count() >= 1){
-            if(Auth::guest()){
-                return redirect()->guest('login');
-            }
             return view('checkout',['states'=>$this->locationStates, 'cart'=> Cart::content(),'servicePrice'=>$this->getServicePrice()]);
         }else{
             return back();
@@ -69,21 +66,44 @@ class ServiceController extends Controller
 
     public function addUserInfo(Request $request){
 
-        $user=Auth::user();
+        if(is_null(Auth::user())){
 
-        $data = $this->validate($request, [
-            'phone'=>'required',
-            'state'=>'required|string',
-            'address'=>'required|string',
-        ]);
+            $data = $this->validate($request, [
+                'name'=>'required|string|max:20',
+                'email'=>'required|string|email',
+                'phone'=>'required',
+                'state'=>'required|string',
+                'address'=>'required|string',
+            ]);
 
-        $user->phone = $data['phone'];
-        $user->state = $data['state'];
-        $user->address = $data['address'];
+            $user = User::create([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'phone' => $data['phone'],
+                'state' => $data['state'],
+                'address' => $data['address'],
+            ]);
+            auth()->login($user);
+            return response()->json(['message'=>'Success']);
 
-        $user->save();
+        }else{
+            $user=Auth::user();
 
-        return response()->json(['message'=>'Success']);
+            $data = $this->validate($request, [
+                'phone'=>'required',
+                'state'=>'required|string',
+                'address'=>'required|string',
+            ]);
+
+            $user->phone = $data['phone'];
+            $user->state = $data['state'];
+            $user->address = $data['address'];
+
+            $user->save();
+
+            return response()->json(['message'=>'Success']);
+        }
+
 
     }
 

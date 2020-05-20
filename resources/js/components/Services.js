@@ -75,7 +75,8 @@ $(document).ready(function(){
 
 $('.fixButton').click(function(e) {
     e.preventDefault();
-
+    var $this = $(this);
+    $this.text('Saving...');
     var fixName = $(".name:checked").val();
     var fixDescription = $(".description").val();
     var fixAdditionalDescription = $(".additionalDescription").val();
@@ -85,8 +86,10 @@ $('.fixButton').click(function(e) {
 
     if(fixName === undefined){
         warning.style.display = 'block';
+        $this.text('Save Request');
     }else if(fixDescription === undefined){
         warning.style.display = 'block';
+        $this.text('Save Request');
     }else{
         $.ajaxSetup({
             headers: {

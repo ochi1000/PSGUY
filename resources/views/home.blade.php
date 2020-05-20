@@ -8,13 +8,7 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100 img-fluid" src="/game-images/fifa20hedit.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 img-fluid" src="/game-images/ellie1.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 img-fluid" src="/game-images/ghost.jpeg" alt="Third slide">
+            <img class="d-block w-100 img-fluid" src="/game-images/fifa20hedit.jpg" alt="first slide">
           </div>
         </div>
       </div>
@@ -82,7 +76,6 @@
     </div>
 
     <div class="tournament-div">
-        {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> --}}
         <div class="fifa-logo-div">
             <img src="/game-images/fifa-logo1.png" alt="ps4 fifa20 tournament">
         </div>

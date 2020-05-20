@@ -37178,7 +37178,11 @@ $('.pricingButton').click(function (e) {
 
 $('.save').click(function (e) {
   e.preventDefault();
+  var $this = $(this);
+  $this.text('Saving...');
+  var name = $(".name").val();
   var phone = $(".phone").val();
+  var email = $(".email").val();
   var state = $(".state").val();
   var address = $(".address").val();
   var warning = document.getElementById('warning');
@@ -37187,10 +37191,13 @@ $('.save').click(function (e) {
 
   if (phone === "") {
     warning.style.display = 'block';
+    $this.text('Save');
   } else if (state === "") {
     warning.style.display = 'block';
+    $this.text('Save');
   } else if (address === "") {
     warning.style.display = 'block';
+    $this.text('Save');
   } else {
     $.ajaxSetup({
       headers: {
@@ -37201,13 +37208,17 @@ $('.save').click(function (e) {
       url: '/adduserinfo',
       type: 'POST',
       data: {
+        name: name,
         phone: phone,
+        email: email,
         state: state,
         address: address
       },
       success: function success(response) {
         console.log(response);
         _success.style.display = 'block';
+        warning.style.display = 'none';
+        $this.text('Saved');
       },
       error: function error(XMLHttpRequest, textStatus, errorThrown) {
         console.log(errorThrown);
@@ -37297,6 +37308,8 @@ $(document).ready(function () {
 });
 $('.fixButton').click(function (e) {
   e.preventDefault();
+  var $this = $(this);
+  $this.text('Saving...');
   var fixName = $(".name:checked").val();
   var fixDescription = $(".description").val();
   var fixAdditionalDescription = $(".additionalDescription").val();
@@ -37307,8 +37320,10 @@ $('.fixButton').click(function (e) {
 
   if (fixName === undefined) {
     warning.style.display = 'block';
+    $this.text('Save Request');
   } else if (fixDescription === undefined) {
     warning.style.display = 'block';
+    $this.text('Save Request');
   } else {
     $.ajaxSetup({
       headers: {
