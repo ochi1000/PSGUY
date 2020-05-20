@@ -9,6 +9,7 @@ $('.save').click(function(e) {
     var address = $(".address").val();
     var warning = document.getElementById('warning');
     var success = document.getElementById('success');
+
     if (phone=== "") {
         warning.style.display = 'block';
         $this.text('Save');

@@ -17,10 +17,10 @@ Route::get('/logout', function () {
 });
 // Route::get('/home', 'HomeController@index')->name('home');
 //Auth
-Auth::routes();
-Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
-Route::get('/callback/{provider}', 'SocialController@callback');
-Route::post('/adduserinfo', 'ServiceController@addUserInfo');
+// Auth::routes();
+// Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
+// Route::get('/callback/{provider}', 'SocialController@callback');
+// Route::post('/adduserinfo', 'ServiceController@addUserInfo');
 
 //Fixing ROutes
 Route::get('/fixing', 'ServiceController@show','fixing');
