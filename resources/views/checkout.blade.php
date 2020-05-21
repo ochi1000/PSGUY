@@ -136,4 +136,9 @@
     @include('includes.editmodal')
     @include('includes.deletemodal')
 
+<script type="text/javascript">
+    if(performance.navigation.type == 2){
+        location.reload(true);
+    }
+</script>
 @endsection

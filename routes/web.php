@@ -13,7 +13,7 @@
 
 Route::get('/logout', function () {
     Auth::logout();
-    return view('home');
+    return redirect('/');
 });
 // Route::get('/home', 'HomeController@index')->name('home');
 //Auth
