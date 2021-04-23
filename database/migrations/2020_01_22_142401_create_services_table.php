@@ -17,7 +17,6 @@ class CreateServicesTable extends Migration
             $table->increments('id');
             $table->integer('user_id');
             $table->string('user_name')->nullable();
-            $table->string('user_phone')->nullable();
             $table->string('user_email')->nullable();
             $table->string('state')->nullable();
             $table->string('address')->nullable();

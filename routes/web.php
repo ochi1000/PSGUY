@@ -51,9 +51,7 @@ Route::get('/shop', function () {
 });
 
 //Admin Routes
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
+
 
 //Not Found Routes
 Route::view('/{path?}','home');
